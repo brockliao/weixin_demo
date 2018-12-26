@@ -4,7 +4,8 @@
     "tabBarIndex/shopMall/shopMall",
     "tabBarIndex/userIndex/userIndex",
     "tabBarIndex/cashIndex/cashIndex",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "drak",
