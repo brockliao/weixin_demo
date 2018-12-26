@@ -1,0 +1,12 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+view{
+  width: 100%;
+  display: block;
+  word-wrap: break-word;
+}

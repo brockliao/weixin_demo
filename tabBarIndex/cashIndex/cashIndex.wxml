@@ -1,0 +1,4 @@
+<!--tabBarIndex/cashIndex/cashIndex.wxml-->
+<view class="container">
+  <text class="textView">tabBarIndex/cashIndex/cashIndex.wxml</text>
+</view>

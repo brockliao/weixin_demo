@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "tabBarIndex/merchantIndex/merchantIndex",
+    "tabBarIndex/shopMall/shopMall",
+    "tabBarIndex/userIndex/userIndex",
+    "tabBarIndex/cashIndex/cashIndex",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "drak",
+    "navigationBarBackgroundColor": "#e34",
+    "navigationBarTitleText": "test 小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 3000
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "tabBarIndex/merchantIndex/merchantIndex",
+        "text": "merchantIndex",
+        "iconPath": "images/merchantDefault.png",
+        "selectedIconPath": "images/merchantSelected.png"
+      },
+      {
+        "pagePath": "tabBarIndex/shopMall/shopMall",
+        "text": "shopMall",
+        "iconPath": "images/shopDefault.png",
+        "selectedIconPath": "images/shopSelected.png"
+      },
+      {
+        "pagePath": "tabBarIndex/cashIndex/cashIndex",
+        "text": "cashIndex",
+        "iconPath": "images/cashDefault.png",
+        "selectedIconPath": "images/cashSelected.png"
+      },
+      {
+        "pagePath": "tabBarIndex/userIndex/userIndex",
+        "text": "userIndex",
+        "iconPath": "images/userDefault.png",
+        "selectedIconPath": "images/userSelected.png"
+      }
+    ],
+    "selectedColor": "#e34",
+    "borderStyle": "white"
+  },
+  "debug": true
+}
