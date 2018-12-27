@@ -1,5 +1,7 @@
 //app.js
+// 注册小程序 
 App({
+  // 小程序初始化后回调事件
   onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -32,6 +34,25 @@ App({
         }
       }
     })
+  },
+  // 获取用户信息 
+  getUserInfo: function(cb) {
+    // cb 回调事件
+    var _this = this;
+    if (_this.globalData.userInfo) {
+      typeof cb == 'function' && cb(_this.globalData.userInfo)
+    } else {
+      wx.login({
+        success: function() {
+          wx.getUserInfo({
+            success: function(res) {
+              _this.globalData.userInfo = res.userInfo;
+              typeof cb == 'function' && cb(_this.globalData.userInfo)
+            }
+          })
+        }
+      })
+    }
   },
   globalData: {
     userInfo: null
