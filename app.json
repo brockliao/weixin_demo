@@ -45,5 +45,5 @@
     "selectedColor": "#e34",
     "borderStyle": "white"
   },
-  "debug": true
+  "debug": false
 }

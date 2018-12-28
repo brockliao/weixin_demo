@@ -35,19 +35,19 @@ App({
       }
     })
   },
-  // 获取用户信息 
-  getUserInfo: function(cb) {
-    // cb 回调事件
+  // 登录  获取用户信息 
+  getUserInfo: function(callback) {
+    // callback 回调事件
     var _this = this;
     if (_this.globalData.userInfo) {
-      typeof cb == 'function' && cb(_this.globalData.userInfo)
+      typeof callback == 'function' && callback(_this.globalData.userInfo)
     } else {
       wx.login({
         success: function() {
           wx.getUserInfo({
             success: function(res) {
               _this.globalData.userInfo = res.userInfo;
-              typeof cb == 'function' && cb(_this.globalData.userInfo)
+              typeof callback == 'function' && callback(_this.globalData.userInfo)
             }
           })
         }
@@ -55,7 +55,8 @@ App({
     }
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    test:"LWX434697"
   },
   onReachBottom() {
     console.log("this is onReachBottom")
